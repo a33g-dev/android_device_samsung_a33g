@@ -21,7 +21,7 @@ PRODUCT_RELEASE_NAME := a33g
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/a33g/device_a33g.mk)
+$(call inherit-product, device/samsung/a33g/full_a33g.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := SM-A300H
