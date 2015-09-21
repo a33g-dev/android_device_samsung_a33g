@@ -15,6 +15,8 @@
 #
 # inherit from the proprietary version
 
+LOCAL_PATH := device/samsung/a33g
+
 -include vendor/samsung/a33g/BoardConfigVendor.mk
 
 TARGET_ARCH := arm
@@ -39,7 +41,11 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1670000000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 11920000000
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-TARGET_PREBUILT_KERNEL := device/samsung/a33g/kernel
+#kernel
+TARGET_KERNEL_SOURCE := kernel/samsung/a33g
+TARGET_KERNEL_CONFIG := cyanogenmod_a33g_defconfig
+TARGET_KERNEL_VARIANT_CONFIG := msm8916_sec_a33g_eur_defconfig
+TARGET_KERNEL_SELINUX_CONFIG := selinux_defconfig
 
 BOARD_HAS_NO_SELECT_BUTTON := true
 
